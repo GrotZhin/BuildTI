@@ -1,0 +1,4 @@
+repository "build1@GrotZhin@cloud"
+  path "/"
+    br "/main"
+    co "/main"
