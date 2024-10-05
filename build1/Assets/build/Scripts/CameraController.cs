@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Shmup
+namespace MetalRay
 {
     public class CameraController : MonoBehaviour{
         [SerializeField] Transform player;

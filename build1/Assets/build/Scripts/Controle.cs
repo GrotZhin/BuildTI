@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Shmup
+namespace MetalRay
 {
     public class Controle : MonoBehaviour{
       [SerializeField] float speed = 5f;
@@ -11,7 +11,7 @@ namespace Shmup
 
       [SerializeField] GameObject model;
 
-      [Header("Camera Bounds")]
+      [Header("Bordas da Camera")]
       [SerializeField] Transform cameraFollow;
       [SerializeField] float minX = -8f;
       [SerializeField] float maxX = 8f;

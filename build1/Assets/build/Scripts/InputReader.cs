@@ -2,7 +2,7 @@ using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Shmup
+namespace MetalRay
 {
     [RequireComponent(typeof(PlayerInput))]
     public class InputReader : MonoBehaviour{

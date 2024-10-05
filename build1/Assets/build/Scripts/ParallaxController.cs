@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace Shmup
+namespace MetalRay
 {
     public class ParallaxController : MonoBehaviour
     {
