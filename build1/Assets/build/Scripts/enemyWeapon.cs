@@ -19,12 +19,12 @@ namespace MetalRay
             if (fireTime >= fireRate)
             {
                 
-                Shoot();
+                EnemyShoot();
                 fireTime = 0f;
             }
 
         }
-        void Shoot()
+        void EnemyShoot()
         {
             Instantiate(shootPrefab, firePoint.position, transform.rotation);
 

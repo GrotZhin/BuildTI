@@ -7,15 +7,14 @@ namespace MetalRay
 {
     public class enemyShoot : MonoBehaviour
     {
-        public float speed = 20f;
+        public float speed = 15f;
         public Rigidbody rb;
-        public int damage = 20;
+        public int damage = 40;
         public GameObject impactEfect;
-        enemyWeapon weapon;
 
         void Start(){
-            rb.velocity = -transform.up * speed;
-            weapon = GetComponent<enemyWeapon>();
+            rb.velocity = (-1* transform.up) * speed;
+
             
         }
        

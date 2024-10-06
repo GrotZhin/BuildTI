@@ -6,7 +6,7 @@ namespace MetalRay
 {
     public class EnemyLife : MonoBehaviour
     {
-        [SerializeField]public int life = 100;
+       public int life = 100;
 
         public GameObject deathEffect;
 
