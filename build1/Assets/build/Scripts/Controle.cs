@@ -3,59 +3,73 @@ using UnityEngine;
 
 namespace MetalRay
 {
-    public class Controle : MonoBehaviour{
-      [SerializeField] float speed = 5f;
-      [SerializeField] float smoothness = 0.1f;
-      [SerializeField] float leanAngle = 15f;
-      [SerializeField] float leanSpeed = 5f;
+  public class Controle : MonoBehaviour
+  {
+    [SerializeField] float speed = 5f;
+    [SerializeField] float smoothness = 0.1f;
+    [SerializeField] float leanAngle = 30f;
+    [SerializeField] float leanSpeed = 5f;
 
-      [SerializeField] GameObject model;
+    [SerializeField] GameObject model;
 
-      [Header("Bordas da Camera")]
-      [SerializeField] Transform cameraFollow;
-      [SerializeField] float minX = -8f;
-      [SerializeField] float maxX = 8f;
-      [SerializeField] float minY = -4f;
-      [SerializeField] float maxY = 4f;
+    [Header("Bordas da Camera")]
+    [SerializeField] Transform cameraFollow;
+    [SerializeField] float minX = -1.5f;
+    [SerializeField] float maxX = 1.5f;
+    [SerializeField] float minY = -2f;
+    [SerializeField] float maxY = 2f;
 
-      InputReader input;
+     float spawnRate = 2F;
 
-      Vector3 velocidadeAtual;
-      Vector3 targetPosition;
-      
+    CharacterController input;
 
-        void Start(){
-        input = GetComponent<InputReader>();
-      }
-      
-      void Update(){
-        targetPosition += new Vector3(input.Move.x, input.Move.y, 0f) * (speed * Time.deltaTime);
+    Vector3 velocidadeAtual;
+    Vector3 targetPosition;
 
-        //Calcular min e max de X e Y baseado na camera
-        var minPlayerX = cameraFollow.position.x + minX;
-        var maxPlayerX= cameraFollow.position.x + maxX;
-        var minPlayerY= cameraFollow.position.y + minY;
-        var maxPlayerY= cameraFollow.position.y + maxY;
 
-        // junta a posicao do player a visao da camera
+    void Start()
+    {
+      input = GetComponent<CharacterController>();
+    }
 
-        targetPosition.x = Mathf.Clamp(value: targetPosition.x, minPlayerX, maxPlayerX);
-        targetPosition.y = Mathf.Clamp(value: targetPosition.y, minPlayerY, maxPlayerY);
+    void Update()
+    {
+      targetPosition += new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0f) * (speed * Time.deltaTime);
+      //Calcular min e max de X e Y baseado na camera
+      var minPlayerX = cameraFollow.position.x + minX;
+      var maxPlayerX = cameraFollow.position.x + maxX;
+      var minPlayerY = cameraFollow.position.y + minY;
+      var maxPlayerY = cameraFollow.position.y + maxY;
 
-        //Lerp a posicao do player para o targetPosition
-        transform.position = Vector3.SmoothDamp(current:transform.position, targetPosition, ref velocidadeAtual, smoothness);
+      // junta a posicao do player a visao da camera
 
-        //calcular o efeito de rotacao
-        var targetRotationAngle = -input.Move.x * leanAngle;
+      targetPosition.x = Mathf.Clamp(value: targetPosition.x, minPlayerX, maxPlayerX);
+      targetPosition.y = Mathf.Clamp(value: targetPosition.y, minPlayerY, maxPlayerY);
 
-        var currentYRotation = transform.localEulerAngles.y;
-        var newRotation = Mathf.LerpAngle(a:currentYRotation, b:targetRotationAngle, t: leanSpeed * Time.deltaTime);
+      //Lerp a posicao do player para o targetPosition
+      transform.position = Vector3.SmoothDamp(current: transform.position, targetPosition, ref velocidadeAtual, smoothness);
 
-        //Aplicar o efeito de rotacao
-        transform.localEulerAngles = new Vector3(x:0f, newRotation,z:0f);
+      //calcular o efeito de rotacao
+      var targetRotationAngle = -Input.GetAxisRaw("Horizontal") * leanAngle;
+
+      var currentYRotation = transform.localEulerAngles.y;
+      var newYRotation = Mathf.LerpAngle(currentYRotation, targetRotationAngle, leanSpeed * Time.deltaTime);
+
+      // Apply the rotation effect
+      transform.localEulerAngles = new Vector3(0f, newYRotation, 0f);
+    }
+    void OnTriggerEnter(Collider collider)
+    {
+      if (collider.gameObject.tag == "gatilho")
+
+      {
+        Debug.Log("SIMM");
+        InvokeRepeating("Spawn", spawnRate, spawnRate);
       }
 
 
     }
 
+
+  }
 }

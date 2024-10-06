@@ -4,8 +4,24 @@ using UnityEngine;
 
 namespace MetalRay
 {
-    public abstract class Weapon : MonoBehaviour
+    public class Weapon : MonoBehaviour
     {
-      
+        public Transform firePoint;
+        public GameObject shootPrefab;
+        void Update()
+        {
+            if (Input.GetButtonDown("Fire1"))
+            {
+
+                Shoot();
+
+            }
+
+        }
+        void Shoot()
+        {
+            Instantiate(shootPrefab, firePoint.position, transform.rotation);
+            
+        }
     }
 }
