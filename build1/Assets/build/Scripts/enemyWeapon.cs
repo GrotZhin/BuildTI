@@ -1,27 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace MetalRay
 {
-    public class Weapon : MonoBehaviour
+    public class enemyWeapon : MonoBehaviour
     {
         public Transform firePoint;
         public GameObject shootPrefab;
+        public float fireTime;
+        
+        public float fireRate = 0.75f;
         void Update()
         {
-            if (Input.GetButtonDown("Fire1"))
+            fireTime += Time.deltaTime;
+            if (fireTime >= fireRate)
             {
-
+                
                 Shoot();
-                Debug.Log("player atirou");
+                fireTime = 0f;
             }
 
         }
         void Shoot()
         {
             Instantiate(shootPrefab, firePoint.position, transform.rotation);
-            
+
         }
     }
 }
