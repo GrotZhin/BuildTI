@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace MetalRay
 {
@@ -16,6 +17,14 @@ namespace MetalRay
             if (life <= 0)
             {
                 Die();
+                SceneManager.LoadScene(1);
+            }
+        }
+  
+        public void RestaureLife(int restaure){
+            life += restaure;
+            if(life > 100){
+                life = 100;
             }
         }
 
@@ -25,4 +34,3 @@ namespace MetalRay
         }
     }
 }
-

@@ -141,7 +141,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 100
+  pontos: 100
   deathEffect: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!114 &-8451777913442849241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,10 +156,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79ec1911250c3246b0a9d1c187c2953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePointEnemy: {fileID: 6067096878316598516}
+  firePoint: {fileID: 0}
   shootPrefab: {fileID: 1066101916143653443, guid: 548c07d15c4f4544cb8ced02ae33e506, type: 3}
   fireTime: 2
-  fireRate: 0.5
+  fireRate: 1
 --- !u!4 &8022614249460411077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 60b202e723467494aa5bbf9fe697fce6, type: 3}
