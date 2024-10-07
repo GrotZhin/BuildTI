@@ -9,7 +9,8 @@ namespace MetalRay
         public float speed = 20f;
         public Rigidbody rb;
         public int damage = 40;
-        public GameObject impactEfect;
+
+         public GameObject impactEfect;
 
         void Start(){
             rb.velocity = transform.up * speed;

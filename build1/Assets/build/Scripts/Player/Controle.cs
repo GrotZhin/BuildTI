@@ -21,6 +21,8 @@ namespace MetalRay
 
      float spawnRate = 2F;
 
+     
+
     CharacterController input;
 
     Vector3 velocidadeAtual;
@@ -30,6 +32,7 @@ namespace MetalRay
     void Start()
     {
       input = GetComponent<CharacterController>();
+      controlePontuacao.Pontuacao = 0;
     }
 
     void Update()
@@ -58,18 +61,6 @@ namespace MetalRay
       // Apply the rotation effect
       transform.localEulerAngles = new Vector3(0f, newYRotation, 0f);
     }
-    void OnTriggerEnter(Collider collider)
-    {
-      if (collider.gameObject.tag == "gatilho")
-
-      {
-        Debug.Log("SIMM");
-        InvokeRepeating("Spawn", spawnRate, spawnRate);
-      }
-
-
-    }
-
 
   }
 }
