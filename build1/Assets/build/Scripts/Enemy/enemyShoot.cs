@@ -14,7 +14,7 @@ namespace MetalRay
 
         void Start(){
             rb.velocity = (-1* transform.up) * speed;
-
+            Destroy(this.gameObject, 5f);
             
         }
        

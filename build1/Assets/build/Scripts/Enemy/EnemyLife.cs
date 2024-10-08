@@ -20,6 +20,7 @@ namespace MetalRay
             if (life <= 0)
             {
                 Die();
+               // Destroy(deathEffect, 2f);
             }
         }
 
@@ -28,6 +29,7 @@ namespace MetalRay
 
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             controlePontuacao.Pontuacao++;
+            
             Destroy(gameObject);
         }
     }

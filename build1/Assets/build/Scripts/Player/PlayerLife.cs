@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,7 @@ namespace MetalRay
 
         public GameObject deathEffect;
 
+        public TextMeshProUGUI textoVida;
         public void TakeDamage(int damage)
         {
             life -= damage;
@@ -26,6 +28,9 @@ namespace MetalRay
             if(life > 100){
                 life = 100;
             }
+        }
+        void Update(){
+              this.textoVida.text = ("Life: "+ life.ToString());
         }
 
         void Die(){
