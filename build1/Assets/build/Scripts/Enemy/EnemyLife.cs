@@ -20,7 +20,7 @@ namespace MetalRay
             if (life <= 0)
             {
                 Die();
-               // Destroy(deathEffect, 2f);
+              
             }
         }
 

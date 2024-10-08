@@ -12,7 +12,8 @@ namespace MetalRay
         Transform parent;
 
         public int damage = 40;
-        public float timer = 4f;
+
+        public float timeDestroy = 0f;
 
         public GameObject impactEfect;
         public GameObject muzzlePrefab;
@@ -20,7 +21,7 @@ namespace MetalRay
         void Start()
         {
             rb.velocity = transform.up * speed;
-            Destroy(this.gameObject, 5f);
+            Destroy(this.gameObject, timeDestroy);
 
             if (muzzlePrefab != null)
             {
@@ -42,7 +43,6 @@ namespace MetalRay
             }
 
             Instantiate(impactEfect, transform.position, transform.rotation);
-            //Destroy(impactEfect, 2f);
             Destroy(gameObject);
         }
 

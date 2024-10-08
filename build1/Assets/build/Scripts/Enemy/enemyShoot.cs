@@ -12,19 +12,21 @@ namespace MetalRay
         public int damage = 40;
         public GameObject impactEfect;
 
+        public float timeDestroy;
+
         void Start(){
             rb.velocity = (-1* transform.up) * speed;
-            Destroy(this.gameObject, 5f);
+            Destroy(this.gameObject, timeDestroy);
             
         }
        
         
         void OnTriggerEnter(Collider hitInfo){
            PlayerLife playerLife = hitInfo.GetComponent<PlayerLife>();
-           if(playerLife != null){
+            if(playerLife != null){
                 playerLife.TakeDamage(damage);
 
-           }
+              }
 
            Instantiate(impactEfect, transform.position, transform.rotation);
             Destroy(gameObject);

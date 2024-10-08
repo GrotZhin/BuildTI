@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace MetalRay
 {
@@ -19,7 +20,7 @@ namespace MetalRay
     [SerializeField] float minY = -2f;
     [SerializeField] float maxY = 2f;
 
-     float spawnRate = 2F;
+  
 
      
 
@@ -60,6 +61,14 @@ namespace MetalRay
 
       // Apply the rotation effect
       transform.localEulerAngles = new Vector3(0f, newYRotation, 0f);
+
+    }
+    void OnTriggerEnter(Collider hitInfo){
+          if (hitInfo.gameObject.CompareTag("Finish"))
+          {
+            Debug.Log("bateuuuu");
+            SceneManager.LoadScene(2);
+          }
     }
 
   }
