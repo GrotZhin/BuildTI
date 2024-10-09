@@ -28,8 +28,9 @@ namespace MetalRay
                 var muzzleVFX = Instantiate(muzzlePrefab, transform.position, Quaternion.identity);
                 muzzleVFX.transform.forward = gameObject.transform.forward;
                 muzzleVFX.transform.SetParent(parent);
+                
 
-                Destroy(muzzleVFX, 1f);
+                Destroy(muzzleVFX, 0.25f);
 
             }
         }
