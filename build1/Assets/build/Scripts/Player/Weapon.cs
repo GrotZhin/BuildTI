@@ -8,6 +8,12 @@ namespace MetalRay
     {
         public Transform firePoint;
         public GameObject shootPrefab;
+      //  public GameObject muzzlePrefab;
+
+        public GameObject muzzleVFX;
+
+
+    
         void Update()
         {
             if (Input.GetButtonDown("Fire1"))
@@ -21,7 +27,7 @@ namespace MetalRay
         void Shoot()
         {
             Instantiate(shootPrefab, firePoint.position, transform.rotation);
-            
+            Instantiate(muzzleVFX, transform);
         }
     }
 }

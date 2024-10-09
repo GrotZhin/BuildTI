@@ -11521,6 +11521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 491505968}
   shootPrefab: {fileID: 1066101916143653443, guid: 8d19fec6212b518439204ea8fc7d118e, type: 3}
+  muzzleVFX: {fileID: 5732456669828075857, guid: 1a9dd32a970864847a4958f2bfd1a811, type: 3}
 --- !u!54 &923150902
 Rigidbody:
   m_ObjectHideFlags: 0
