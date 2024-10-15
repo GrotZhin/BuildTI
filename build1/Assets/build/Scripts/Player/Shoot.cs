@@ -19,6 +19,11 @@ namespace MetalRay
         public GameObject impactEfect;
         public GameObject muzzlePrefab;
 
+        void OnBecameInvisible()
+        {
+            Destroy(gameObject);
+        }
+
         void Start()
         {
             rb.velocity = transform.up * speed;

@@ -14,23 +14,40 @@ namespace MetalRay
         public GameObject deathEffect;
         public TextMeshProUGUI scoreText;
 
+        public ParticleSystem vfxhit;
+        public ParticleSystem vfxhinstinstance;
+      
+
         public void TakeDamage(int damage)
         {
+
             life -= damage;
             if (life <= 0)
             {
                 Die();
-              
+                
             }
+            
+             
         }
 
         
         void Die(){
 
+           
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             controlePontuacao.Pontuacao++;
-            
+        
             Destroy(gameObject);
+             
         }
+
+        private void SpawnDamagevfx()
+        {
+             vfxhinstinstance  =  Instantiate(vfxhit ,transform.position, Quaternion.identity); 
+        
+        }
+
+  
     }
 }
