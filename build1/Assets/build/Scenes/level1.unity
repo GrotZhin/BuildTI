@@ -865,8 +865,8 @@ MonoBehaviour:
   - {fileID: 619248192}
   - {fileID: 781889659}
   - {fileID: 1654507009}
-  smoothing: 20
-  multiplier: 30
+  smoothing: 10
+  multiplier: 15
 --- !u!1001 &60500302
 PrefabInstance:
   m_ObjectHideFlags: 0

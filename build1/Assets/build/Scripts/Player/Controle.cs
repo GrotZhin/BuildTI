@@ -66,8 +66,8 @@ namespace MetalRay
     void OnTriggerEnter(Collider hitInfo){
           if (hitInfo.gameObject.CompareTag("Finish"))
           {
-            Debug.Log("bateuuuu");
-            SceneManager.LoadScene(2);
+           
+            SceneManager.LoadScene(3);
           }
     }
 

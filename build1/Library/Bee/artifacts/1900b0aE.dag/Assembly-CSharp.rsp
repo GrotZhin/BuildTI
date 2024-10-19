@@ -377,6 +377,7 @@
 "Assets/build/Scripts/InGame/efectDestroy.cs"
 "Assets/build/Scripts/InGame/inGame.cs"
 "Assets/build/Scripts/InGame/Retry.cs"
+"Assets/build/Scripts/Menu/menuManager.cs"
 "Assets/build/Scripts/Player/Controle.cs"
 "Assets/build/Scripts/Player/Life.cs"
 "Assets/build/Scripts/Player/PlayerLife.cs"

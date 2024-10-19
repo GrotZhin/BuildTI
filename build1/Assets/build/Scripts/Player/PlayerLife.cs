@@ -19,7 +19,7 @@ namespace MetalRay
             if (life <= 0)
             {
                 Die();
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(2);
             }
         }
   
