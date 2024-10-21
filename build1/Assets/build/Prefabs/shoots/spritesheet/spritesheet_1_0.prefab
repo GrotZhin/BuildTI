@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2420622998757141488}
   - component: {fileID: 5473317595400846930}
   - component: {fileID: -6057552337661318854}
-  - component: {fileID: -766826812349340968}
   m_Layer: 0
   m_Name: spritesheet_1_0
   m_TagString: Untagged
@@ -121,15 +120,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0.5
---- !u!114 &-766826812349340968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5732456669828075857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c9bc033a8e16aa4f853a4e9353d132a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
