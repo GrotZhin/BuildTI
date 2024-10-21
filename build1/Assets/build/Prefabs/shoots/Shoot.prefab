@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9046505435363006347}
   - component: {fileID: -7391116586325058367}
   m_Layer: 9
-  m_Name: shoot
+  m_Name: Shoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,11 +101,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rb: {fileID: 9046505435363006347}
+  parent: {fileID: 0}
   damage: 40
   timeDestroy: 0.5
   impactEfect: {fileID: 1302563100239013211, guid: 029c09ed288e4a34996a136127bddc9b, type: 3}
   muzzlePrefab: {fileID: 5732456669828075857, guid: 1a9dd32a970864847a4958f2bfd1a811, type: 3}
-  mzspd: 4
 --- !u!54 &9046505435363006347
 Rigidbody:
   m_ObjectHideFlags: 0

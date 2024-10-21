@@ -363,7 +363,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11170}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 28264}
+=======
+      Script: {instanceID: 28322}
+>>>>>>> 64eec4ce9b90960d9b5236b03b1bde8cac61cdfd
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -428,7 +432,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8578}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 40870}
+=======
+      Script: {instanceID: 48430}
+>>>>>>> 64eec4ce9b90960d9b5236b03b1bde8cac61cdfd
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -771,7 +779,7 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
-      Hash: 964b785368c7babc8d54a77b0bf6ec4d
+      Hash: 29612beaf22065f5318bc23c3754ece5
     assemblyName: Assembly-CSharp
     namespaceName: MetalRay
     className: Weapon
@@ -1749,7 +1757,7 @@ ScriptsOnlyBuild:
     className: inGame
   - hash:
       serializedVersion: 2
-      Hash: 26d1fd329864f2f81c6842a3bf336478
+      Hash: 9ff7e840d3e6ec3627fd90a6e6b7f568
     assemblyName: Assembly-CSharp
     namespaceName: MetalRay
     className: Shoot
@@ -1857,7 +1865,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: c9eb9643a927c8ed238f9d040ebfea92
+      Hash: e03dd0d0c98af5bc34a5081530bd557b
     assemblyName: Assembly-CSharp
     namespaceName: MetalRay
     className: EnemyLife
@@ -1908,4 +1916,4 @@ ScriptsOnlyBuild:
   - Assets/build/Scenes/level1.unity
   - Assets/build/Scenes/lose.unity
   - Assets/build/Scenes/win.unity
-  playerPath: C:/Users/bielc/OneDrive/Documentos/trabalhosFacul/TI/MetalRay/build1.exe
+  playerPath: C:/Users/aleat/OneDrive/Documentos/MRBd/BuildTI/build1/buildV1/build1.exe

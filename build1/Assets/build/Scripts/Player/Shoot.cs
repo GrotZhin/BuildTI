@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -9,7 +10,7 @@ namespace MetalRay
     {
         public float speed = 20f;
         public Rigidbody rb;
-        Transform parent;
+        public Transform parent;
 
         public int damage = 40;
 
@@ -18,6 +19,11 @@ namespace MetalRay
         public GameObject impactEfect;
         public GameObject muzzlePrefab;
 
+        void OnBecameInvisible()
+        {
+            Destroy(gameObject);
+        }
+
         void Start()
         {
             rb.velocity = transform.up * speed;
@@ -25,7 +31,7 @@ namespace MetalRay
 
             if (muzzlePrefab != null)
             {
-                var muzzleVFX = Instantiate(muzzlePrefab, transform.position, Quaternion.identity);
+                GameObject muzzleVFX = Instantiate(muzzlePrefab,transform.position,quaternion.identity);
                 muzzleVFX.transform.forward = gameObject.transform.forward;
                 muzzleVFX.transform.SetParent(parent);
                 

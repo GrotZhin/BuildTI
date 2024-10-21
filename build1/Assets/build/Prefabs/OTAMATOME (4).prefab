@@ -170,6 +170,7 @@ MonoBehaviour:
   pontos: 100
   deathEffect: {fileID: 3308732416233299549, guid: 8b4dfd9937c53e94eba7816ba355b53b, type: 3}
   scoreText: {fileID: 7306564048401854638, guid: 4ff1cbe3c0d46674283f740aa8d42ed7, type: 3}
+  vfxhit: {fileID: 5165246255472843786, guid: 80d56ecff5b950147b3c9615098b99f3, type: 3}
 --- !u!114 &-8451777913442849241
 MonoBehaviour:
   m_ObjectHideFlags: 0

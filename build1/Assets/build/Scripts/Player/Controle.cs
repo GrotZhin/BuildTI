@@ -34,6 +34,7 @@ namespace MetalRay
     {
       input = GetComponent<CharacterController>();
       controlePontuacao.Pontuacao = 0;
+   
     }
 
     void Update()
