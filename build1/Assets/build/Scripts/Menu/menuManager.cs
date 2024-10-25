@@ -12,7 +12,7 @@ namespace MetalRay
         [SerializeField]private GameObject optionMenu;
         public void Play()
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("level1");
         }
         public void Options()
         {

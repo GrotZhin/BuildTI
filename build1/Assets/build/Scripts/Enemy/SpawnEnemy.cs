@@ -7,17 +7,21 @@ namespace MetalRay
 {
     public class SpawnEnemy : MonoBehaviour
     {
-        public Transform enemyPrefab;
-      
 
-        public float spawnRate = 2f;
+        public GameObject[] enemyType;
 
-    
-        
+        public Transform spawn;
 
-        private void Spawn(){
-            var enemyTransform = Instantiate (enemyPrefab) as Transform;
-            enemyTransform.position = transform.position;
+        void Start()
+        {
+            InvokeRepeating("Spawn", 1f, 5f);
+        }
+
+        void Spawn()
+        {
+            var random = enemyType[Random.Range(0, enemyType.Length)];
+
+            var enemyTransform = Instantiate(random, spawn.transform);
         }
     }
 

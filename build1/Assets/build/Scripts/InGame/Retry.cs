@@ -8,7 +8,7 @@ namespace MetalRay
     public class Retry : MonoBehaviour
     {
         public void RetryGame(){
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("level1");
         }
     }
 }

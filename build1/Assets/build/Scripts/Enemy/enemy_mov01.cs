@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class enemy_mov01 : MonoBehaviour
 {
-     public float spd = 5;
+     public float spd = 1;
+
+     public Transform cameraFollow;
     void Start()
     {
         
@@ -28,7 +30,7 @@ public class enemy_mov01 : MonoBehaviour
         transform.position = pos;
 
         
-        if (pos.y <= -1)
+        if (pos.y < cameraFollow.position.y - 4f)
         {
           
             Destroy(gameObject);

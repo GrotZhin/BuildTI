@@ -68,7 +68,7 @@ namespace MetalRay
           if (hitInfo.gameObject.CompareTag("Finish"))
           {
            
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene("win");
           }
     }
 
