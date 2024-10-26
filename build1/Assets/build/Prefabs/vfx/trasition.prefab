@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 182644677472896783}
   - component: {fileID: 5348626782044662988}
   - component: {fileID: 1636555877620629504}
+  - component: {fileID: 8030716665342254351}
   m_Layer: 5
   m_Name: trasition
   m_TagString: Untagged
@@ -107,3 +108,17 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &8030716665342254351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670094026487314941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad124935fcdec384ba41362e4d658a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tras: {fileID: 5348626782044662988}
+  str: 0

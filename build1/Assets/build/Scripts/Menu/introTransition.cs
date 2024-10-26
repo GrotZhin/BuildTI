@@ -8,27 +8,47 @@ namespace MetalRay
 {
     public class introTransition : MonoBehaviour
     {
-        public Animator transition;
-        public float currentTime = 0f;
-        public float startTime = 10f;
+ 
+        public Animator tras;
+        public float str;
 
-
+        public GameObject canvas;
+        
         void Start()
         {
-         currentTime = startTime ;
+
+         DontDestroyOnLoad(gameObject);
+          DontDestroyOnLoad(canvas);
+         Invoke(nameof(Activateani),str);
+
         }
 
         // Update is called once per frame
-        public void Update()
+
+        public void Endfadein()
         {
-           currentTime  -= 1 * Time.deltaTime ;
 
-        if (currentTime <=0){
+             SceneManager.LoadScene("MainMenu");
+            tras.Play("fadeout");
 
-        SceneManager.LoadScene("MainMenu");
         }
-        
 
+        public void Endfadeout()
+        {
+
+            Destroy(gameObject);
+            Destroy(canvas);
+            Debug.Log ("sepafoi");
+            
+        }
+        void OnDestroy()
+        {
+            Debug.Log ("destruido");
+        }
+        void Activateani()
+        {
+
+            tras.enabled = true;
 
         }
         

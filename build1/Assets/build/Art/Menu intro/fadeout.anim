@@ -257,4 +257,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.33333334
+    functionName: Endfadeout
+    data: 
+    objectReferenceParameter: {fileID: 6670094026487314941, guid: 48f9b3235a22a7d4781602ff2ba2477b, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
