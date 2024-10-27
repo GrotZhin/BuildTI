@@ -386,6 +386,7 @@
 "Assets/build/Scripts/Player/Weapon.cs"
 "Assets/build/Scripts/Score/controlePontuacao.cs"
 "Assets/build/Scripts/soundManangers/soundManager.cs"
+"Assets/build/Scripts/soundManangers/volumeSettings.cs"
 -langversion:9.0
 /deterministic
 /optimize+

@@ -8,18 +8,18 @@ namespace MetalRay
 {
     public class introTransition : MonoBehaviour
     {
- 
+
         public Animator tras;
         public float str;
 
         public GameObject canvas;
-        
+
         void Start()
         {
 
-         DontDestroyOnLoad(gameObject);
-          DontDestroyOnLoad(canvas);
-         Invoke(nameof(Activateani),str);
+            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(canvas);
+            Invoke(nameof(Activateani), str);
 
         }
 
@@ -28,22 +28,22 @@ namespace MetalRay
         public void Endfadein()
         {
 
-             SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("MainMenu");
             tras.Play("fadeout");
 
         }
 
         public void Endfadeout()
         {
-            soundManager.PlaySound(SoundType.INTROTRANSITION);
+           
             Destroy(gameObject);
             Destroy(canvas);
-            Debug.Log ("sepafoi");
-            
+            Debug.Log("sepafoi");
+
         }
         void OnDestroy()
         {
-            Debug.Log ("destruido");
+            Debug.Log("destruido");
         }
         void Activateani()
         {
@@ -51,6 +51,6 @@ namespace MetalRay
             tras.enabled = true;
 
         }
-        
+
     }
 }

@@ -10,6 +10,14 @@ namespace MetalRay
     {
         [SerializeField]private GameObject mainMenu;
         [SerializeField]private GameObject optionMenu;
+
+
+        void Start(){
+             soundManager.PlaySound(SoundType.menuSong);
+             //soundManager.PlaySound(SoundType.sfx);
+            
+        }
+        
         public void Play()
         {
             SceneManager.LoadScene("level1");
@@ -30,5 +38,6 @@ namespace MetalRay
             mainMenu.SetActive(true);
             optionMenu.SetActive(false);
         }
+
     }
 }

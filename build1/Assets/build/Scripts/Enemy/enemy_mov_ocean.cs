@@ -6,10 +6,10 @@ public class enemy_mov_ocean : MonoBehaviour
 {
   float sinCenterX;
 
-  public float minAmp = -1f;
-  public float maxAmp = 1f;
-  public float minFr = -1f;
-  public float maxFr = 1f;
+  public float minAmp = -3f;
+  public float maxAmp = 3f;
+  public float minFr = -3f;
+  public float maxFr = 3f;
 
 
 
