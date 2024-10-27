@@ -35,7 +35,7 @@ namespace MetalRay
 
         public void Endfadeout()
         {
-
+            soundManager.PlaySound(SoundType.INTROTRANSITION);
             Destroy(gameObject);
             Destroy(canvas);
             Debug.Log ("sepafoi");
