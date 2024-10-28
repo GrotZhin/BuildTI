@@ -13,7 +13,7 @@ namespace MetalRay
 
 
         void Start(){
-             soundManager.PlaySound(SoundType.menuSong);
+             //soundManager.PlaySound(SoundType.menuSong);
              //soundManager.PlaySound(SoundType.sfx);
             
         }
