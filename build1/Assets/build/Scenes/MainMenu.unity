@@ -2362,7 +2362,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 797181353}
         m_TargetAssemblyTypeName: MetalRay.volumeSettings, Assembly-CSharp
-        m_MethodName: SetMusicVolume
+        m_MethodName: SetGeralVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Video;
+
 
 namespace MetalRay
 {
     public class PlayerLife : MonoBehaviour
     {
        public int life = 100;
+public GameObject hitSprite;
 
         public GameObject deathEffect;
 
@@ -16,7 +20,8 @@ namespace MetalRay
         public void TakeDamage(int damage)
         {
             life -= damage;
-            if (life <= 0)
+            
+                        if (life <= 0)
             {
                 Die();
                 SceneManager.LoadScene("lose");

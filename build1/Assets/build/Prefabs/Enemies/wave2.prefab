@@ -67,10 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fef33a48af93f14d98c8d140e24dafb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minAmp: -1
-  maxAmp: 1
-  minFr: -1
-  maxFr: 1
+  minAmp: -3
+  maxAmp: 3
+  minFr: 0
+  maxFr: 3
 --- !u!1001 &1003344424070328986
 PrefabInstance:
   m_ObjectHideFlags: 0
