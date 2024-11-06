@@ -326,12 +326,16 @@
 "Assets/build/Scripts/InGame/efectDestroy.cs"
 "Assets/build/Scripts/InGame/inGame.cs"
 "Assets/build/Scripts/InGame/Retry.cs"
+"Assets/build/Scripts/Menu/introTransition.cs"
+"Assets/build/Scripts/Menu/menuManager.cs"
 "Assets/build/Scripts/Player/Controle.cs"
 "Assets/build/Scripts/Player/Life.cs"
 "Assets/build/Scripts/Player/PlayerLife.cs"
 "Assets/build/Scripts/Player/Shoot.cs"
 "Assets/build/Scripts/Player/Weapon.cs"
 "Assets/build/Scripts/Score/controlePontuacao.cs"
+"Assets/build/Scripts/soundManangers/soundManager.cs"
+"Assets/build/Scripts/soundManangers/volumeSettings.cs"
 -langversion:9.0
 /deterministic
 /optimize+

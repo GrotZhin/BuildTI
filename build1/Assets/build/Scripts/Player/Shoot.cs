@@ -46,7 +46,8 @@ namespace MetalRay
             if (enemyLife != null)
             {
                 enemyLife.TakeDamage(damage);
-
+                Debug.Log(damage);
+                Debug.Log(enemyLife);
             }
 
             Instantiate(impactEfect, transform.position, transform.rotation);

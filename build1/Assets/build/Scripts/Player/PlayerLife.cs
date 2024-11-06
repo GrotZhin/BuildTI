@@ -37,15 +37,6 @@ namespace MetalRay
                 life = 100;
             }
         }
-        void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.CompareTag("enemy"))
-            {
-                TakeDamage(damage);
-                //Destroy(other.gameObject.CompareTag("enemy"));
-            }
-
-        }
         void Update()
         {
             this.textoVida.text = ("Life: " + life.ToString());

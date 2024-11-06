@@ -9,14 +9,34 @@ namespace MetalRay
 {
     public class EnemyLife : MonoBehaviour
     {
-       public int life = 100;
-       public float pontos = 100;
+        public int life;
+
         public GameObject deathEffect;
+
         public TextMeshProUGUI scoreText;
 
         public ParticleSystem vfxhit;
-        
-      
+        public int damage = 10;
+
+        DropRate dropRate;
+
+        void Start()
+        {
+            dropRate = GetComponent<DropRate>();
+        }
+
+
+        void OnTriggerEnter(Collider hitInfo)
+        {
+            PlayerLife playerLife = hitInfo.GetComponent<PlayerLife>();
+            if (playerLife != null)
+            {
+                playerLife.TakeDamage(damage);
+
+
+            }
+            Die();
+        }
 
         public void TakeDamage(int damage)
         {
@@ -24,23 +44,23 @@ namespace MetalRay
             life -= damage;
             if (life <= 0)
             {
+                dropRate.DropPowerUp();
                 Die();
-                
+
             }
-            
-             
+
+
         }
 
-        
-        void Die(){
 
-           
+        void Die()
+        {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
-            Instantiate(vfxhit ,transform.position, Quaternion.identity); 
+            Instantiate(vfxhit, transform.position, Quaternion.identity);
             controlePontuacao.Pontuacao++;
-            
+
             Destroy(gameObject);
-             
+
         }
     }
 }

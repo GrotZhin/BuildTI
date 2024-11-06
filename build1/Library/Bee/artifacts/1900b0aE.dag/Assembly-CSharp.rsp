@@ -384,6 +384,7 @@
 "Assets/build/Scripts/Player/PlayerLife.cs"
 "Assets/build/Scripts/Player/Shoot.cs"
 "Assets/build/Scripts/Player/Weapon.cs"
+"Assets/build/Scripts/powerUps/dropRate.cs"
 "Assets/build/Scripts/Score/controlePontuacao.cs"
 "Assets/build/Scripts/soundManangers/soundManager.cs"
 "Assets/build/Scripts/soundManangers/volumeSettings.cs"

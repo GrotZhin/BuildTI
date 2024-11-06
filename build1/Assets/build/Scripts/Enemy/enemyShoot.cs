@@ -14,10 +14,7 @@ namespace MetalRay
 
         public float timeDestroy;
 
-        void OnBecameInvisible()
-        {
-            Destroy(gameObject);
-        }
+      
         void Start(){
             rb.velocity = (-1* transform.up) * speed;
             Destroy(this.gameObject, timeDestroy);

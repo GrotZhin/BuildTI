@@ -17,7 +17,11 @@ public class enemy_mov01 : MonoBehaviour
     void Update()
     {
         
-    }
+    } 
+    void OnBecameInvisible()
+        {
+            Destroy(gameObject);
+        }
     
     private void FixedUpdate()
     {

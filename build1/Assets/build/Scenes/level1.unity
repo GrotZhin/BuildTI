@@ -1348,7 +1348,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType:
+  - {fileID: 7516247692285237413, guid: 83316023cdb65de428d2f4dcef9da2da, type: 3}
   - {fileID: 283939708363302037, guid: d2aaa44100927d04ca7944241439f54c, type: 3}
+  - {fileID: 3030471404616492717, guid: 337161a2d5b3c2749a401fcdc1144371, type: 3}
   spawn: {fileID: 1011684833}
 --- !u!1 &1136636577
 GameObject:
