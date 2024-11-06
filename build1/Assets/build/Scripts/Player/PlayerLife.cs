@@ -11,8 +11,9 @@ namespace MetalRay
 {
     public class PlayerLife : MonoBehaviour
     {
-       public int life = 100;
-public GameObject hitSprite;
+        public int life = 100;
+        public int damage = 20;
+        public GameObject hitSprite;
 
         public GameObject deathEffect;
 
@@ -20,25 +21,38 @@ public GameObject hitSprite;
         public void TakeDamage(int damage)
         {
             life -= damage;
-            
-                        if (life <= 0)
+
+            if (life <= 0)
             {
                 Die();
                 SceneManager.LoadScene("lose");
             }
         }
-  
-        public void RestaureLife(int restaure){
+
+        public void RestaureLife(int restaure)
+        {
             life += restaure;
-            if(life > 100){
+            if (life > 100)
+            {
                 life = 100;
             }
         }
-        void Update(){
-              this.textoVida.text = ("Life: "+ life.ToString());
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("enemy"))
+            {
+                TakeDamage(damage);
+                //Destroy(other.gameObject.CompareTag("enemy"));
+            }
+
+        }
+        void Update()
+        {
+            this.textoVida.text = ("Life: " + life.ToString());
         }
 
-        void Die(){
+        void Die()
+        {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

@@ -6,13 +6,9 @@ public class enemy_mov_ocean : MonoBehaviour
 {
   float sinCenterX;
 
-  public int minAmp = -3;
-  public int maxAmp = 3;
-  public int minFr = 0;
-  public int maxFr = 3;
-
-  int amplitude;
-  int frequency;
+  public bool esquerda;
+  public int amplitude;
+  public int frequency;
 
 
 
@@ -21,25 +17,37 @@ public class enemy_mov_ocean : MonoBehaviour
   {
 
     sinCenterX = transform.position.x;
-     amplitude = Random.Range(minAmp, maxAmp);
-     frequency = Random.Range(minFr, maxFr);
+   
   }
 
   // Update is called once per frame
   void Update()
   {
-   
+    Moviment();
+  }
 
+  void Moviment()
+  {
     Vector2 pos = transform.position;
+    float sin;
 
-    float sin = Mathf.Sin((pos.y * frequency)) * amplitude;
+
+    if (esquerda == true)
+    {
+      sin = Mathf.Sin((pos.y * frequency)) * amplitude;
+    }
+    else
+    {
+      sin = Mathf.Sin((pos.y * frequency)) * -amplitude;
+    }
+
     pos.x = sinCenterX + sin;
     Debug.Log(amplitude);
     transform.position = pos;
-
-
-
-
   }
+
+
+
+
 
 }

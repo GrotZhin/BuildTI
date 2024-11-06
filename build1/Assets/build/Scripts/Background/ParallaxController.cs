@@ -21,7 +21,7 @@ namespace MetalRay
         void Update()
         {  //interage com todas as camadas do background
             for (var i = 0; i < backgrounds.Length; i++){
-                var parallax = (cameraPrevia.y - cam.position.y) * (i * multiplier * Time.deltaTime);
+                var parallax = (cameraPrevia.y - cam.position.y) * (i * multiplier) * Time.deltaTime;
                 var targetY = backgrounds[i].position.y + parallax;
 
                 var targetPosition = new Vector3(backgrounds[i].position.x, y:targetY, backgrounds[i].position.z);
