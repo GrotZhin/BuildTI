@@ -42,7 +42,7 @@ public class enemy_mov_ocean : MonoBehaviour
     }
 
     pos.x = sinCenterX + sin;
-    Debug.Log(amplitude);
+    
     transform.position = pos;
   }
 

@@ -7,6 +7,8 @@ TagManager:
   - enemyshoot
   - enemy
   - powerUp
+  - enemyDestroy
+  - shootOn
   layers:
   - Default
   - TransparentFX

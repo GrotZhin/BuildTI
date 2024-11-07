@@ -52,7 +52,10 @@ namespace MetalRay
 
         }
 
-
+        public void Delete()
+        {
+            Destroy(gameObject);
+        }
         void Die()
         {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
