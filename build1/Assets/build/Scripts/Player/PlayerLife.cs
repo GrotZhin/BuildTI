@@ -37,6 +37,18 @@ namespace MetalRay
                 life = 100;
             }
         }
+
+         void OnCollisionEnter(Collision hitInfo)
+        {
+            EnemyLife enemyLife = hitInfo.collider.GetComponent<EnemyLife>();
+            if (enemyLife != null)
+            {
+                enemyLife.Die();
+                TakeDamage(damage);
+
+            }
+           
+        }
         void Update()
         {
             this.textoVida.text = ("Life: " + life.ToString());

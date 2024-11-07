@@ -26,17 +26,7 @@ namespace MetalRay
         }
 
 
-        void OnTriggerEnter(Collider hitInfo)
-        {
-            PlayerLife playerLife = hitInfo.GetComponent<PlayerLife>();
-            if (playerLife != null)
-            {
-                playerLife.TakeDamage(damage);
 
-
-            }
-            Die();
-        }
 
         public void TakeDamage(int damage)
         {
@@ -44,9 +34,16 @@ namespace MetalRay
             life -= damage;
             if (life <= 0)
             {
-                dropRate.DropPowerUp();
                 Die();
+                dropRate.DropPowerUp();
+            }
 
+
+        }
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("enemyDestroy")){
+                Delete();
             }
 
 
@@ -56,7 +53,7 @@ namespace MetalRay
         {
             Destroy(gameObject);
         }
-        void Die()
+        public void Die()
         {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Instantiate(vfxhit, transform.position, Quaternion.identity);

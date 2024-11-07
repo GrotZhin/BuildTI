@@ -13,14 +13,21 @@ namespace MetalRay
         public GameObject firePoint1;
         public GameObject shootPrefab;
         public float fireTime;
-        
+
+        enemyWeapon EnemyWeapon;
+
         public float fireRate = 0.75f;
+
+        void Start()
+        {
+            enabled = false;
+        }
         void Update()
         {
             fireTime += Time.deltaTime;
             if (fireTime >= fireRate)
             {
-                
+
                 EnemyShoot();
                 fireTime = 0f;
             }
@@ -31,10 +38,18 @@ namespace MetalRay
             Instantiate(shootPrefab, firePoint.position, transform.rotation);
 
         }
-
-        public void ShootOn(){
-             firePoint1.SetActive(true);
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("shootOn"))
+            {
+                ShootOn();
+            }
         }
-       
+
+        public void ShootOn()
+        {
+            enabled = true;
+        }
+
     }
 }

@@ -24,7 +24,7 @@ namespace MetalRay
 
      
 
-    CharacterController input;
+    
 
     Vector3 velocidadeAtual;
     Vector3 targetPosition;
@@ -32,7 +32,7 @@ namespace MetalRay
 
     void Start()
     {
-      input = GetComponent<CharacterController>();
+      
       controlePontuacao.Pontuacao = 0;
    
     }
