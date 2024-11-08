@@ -2428,8 +2428,9 @@ GameObject:
   - component: {fileID: 1824920422}
   - component: {fileID: 1824920424}
   - component: {fileID: 1824920425}
+  - component: {fileID: 1824920426}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: stagePopUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2544,6 +2545,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1824920426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824920420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31554bc08384aec4fb4bb01d164244da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 2.5
 --- !u!4 &1888714955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2782701039361538214, guid: 5e08e280167413b4f9cd36afb141ebd3, type: 3}
