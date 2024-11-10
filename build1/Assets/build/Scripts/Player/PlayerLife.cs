@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 using UnityEngine.Video;
 
 
@@ -11,8 +12,12 @@ namespace MetalRay
 {
     public class PlayerLife : MonoBehaviour
     {
-        public int life = 100;
+        public float life;
+        float maxLife = 100;
         public int damage = 20;
+        public UnityEngine.UI.Image fillBar;
+        public UnityEngine.UI.Image halfBar;
+        public GameObject lifeBar;
         public GameObject hitSprite;
 
         public GameObject deathEffect;
@@ -32,7 +37,7 @@ namespace MetalRay
         public void RestaureLife(int restaure)
         {
             life += restaure;
-            if (life > 100)
+            if (life > maxLife)
             {
                 life = 100;
             }
@@ -51,7 +56,20 @@ namespace MetalRay
         }
         void Update()
         {
-            this.textoVida.text = ("Life: " + life.ToString());
+            if (fillBar.fillAmount <= 0.5)
+            {
+                lifeBar.SetActive(false);
+            }else if(fillBar.fillAmount >= 0.5){
+                lifeBar.SetActive(true);
+            }
+            LifeBar();
+
+        }
+
+        public void LifeBar(){
+            fillBar.fillAmount = life/maxLife;
+            halfBar.fillAmount = life/maxLife;
+
         }
 
         void Die()

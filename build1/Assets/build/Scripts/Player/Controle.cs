@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,21 +21,14 @@ namespace MetalRay
     [SerializeField] float minY = -2f;
     [SerializeField] float maxY = 2f;
 
-  
-
-     
-
-    
-
     Vector3 velocidadeAtual;
     Vector3 targetPosition;
 
 
     void Start()
     {
-      
       controlePontuacao.Pontuacao = 0;
-   
+  
     }
 
     void Update()
@@ -65,12 +59,15 @@ namespace MetalRay
 
     }
     void OnTriggerEnter(Collider hitInfo){
+         
+
           if (hitInfo.gameObject.CompareTag("Finish"))
           {
            
             SceneManager.LoadScene("win");
           }
     }
-
+  
+  
   }
 }

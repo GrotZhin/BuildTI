@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - MetalRay.CameraController
     - MetalRay.Controle
+    - MetalRay.DropRate
     - MetalRay.EnemyLife
     - MetalRay.NewBehaviourScript
     - MetalRay.ParallaxController
@@ -11,6 +12,7 @@ ScriptsOnlyBuild:
     - MetalRay.Shoot
     - MetalRay.SpawnEnemy
     - MetalRay.Weapon
+    - MetalRay.distorcionPowerUp
     - MetalRay.efectsDestroy
     - MetalRay.enemyShoot
     - MetalRay.enemyWeapon
@@ -76,8 +78,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -195,14 +199,14 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
   - assembly: Assembly-CSharp
+    fullTypeName: MetalRay.menuManager
+    methodName: Back
+  - assembly: Assembly-CSharp
     fullTypeName: MetalRay.volumeSettings
     methodName: SetMusicVolume
   - assembly: Assembly-CSharp
     fullTypeName: MetalRay.menuManager
     methodName: Exit
-  - assembly: Assembly-CSharp
-    fullTypeName: MetalRay.menuManager
-    methodName: Back
   - assembly: Assembly-CSharp
     fullTypeName: MetalRay.menuManager
     methodName: Play
@@ -215,6 +219,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: MetalRay.volumeSettings
     methodName: SetMusicVolume
+  - assembly: Assembly-CSharp
+    fullTypeName: MetalRay.Retry
+    methodName: RetryGame
   - assembly: Assembly-CSharp
     fullTypeName: MetalRay.Retry
     methodName: RetryGame
@@ -247,7 +254,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1590}
+      Script: {instanceID: 1588}
     - Class: 114
       Script: {instanceID: 1592}
     - Class: 114
@@ -261,17 +268,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3838}
     - Class: 114
-      Script: {instanceID: 6874}
+      Script: {instanceID: 6876}
     - Class: 114
-      Script: {instanceID: 6992}
+      Script: {instanceID: 6994}
     - Class: 114
-      Script: {instanceID: 8086}
+      Script: {instanceID: 8088}
     - Class: 114
-      Script: {instanceID: 8582}
+      Script: {instanceID: 8584}
     - Class: 114
-      Script: {instanceID: 9574}
+      Script: {instanceID: 9576}
     - Class: 114
-      Script: {instanceID: 11146}
+      Script: {instanceID: 11148}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -384,61 +391,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5488}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5722}
     - Class: 114
-      Script: {instanceID: 5872}
+      Script: {instanceID: 5874}
     - Class: 114
-      Script: {instanceID: 6708}
+      Script: {instanceID: 6710}
     - Class: 114
-      Script: {instanceID: 6782}
+      Script: {instanceID: 6784}
     - Class: 114
-      Script: {instanceID: 6888}
+      Script: {instanceID: 6890}
     - Class: 114
-      Script: {instanceID: 6908}
+      Script: {instanceID: 6910}
     - Class: 114
-      Script: {instanceID: 6992}
+      Script: {instanceID: 6994}
     - Class: 114
-      Script: {instanceID: 7002}
+      Script: {instanceID: 7004}
     - Class: 114
-      Script: {instanceID: 7284}
+      Script: {instanceID: 7286}
     - Class: 114
-      Script: {instanceID: 7288}
+      Script: {instanceID: 7290}
     - Class: 114
-      Script: {instanceID: 7312}
+      Script: {instanceID: 7314}
     - Class: 114
-      Script: {instanceID: 7682}
+      Script: {instanceID: 7684}
     - Class: 114
-      Script: {instanceID: 8072}
+      Script: {instanceID: 8074}
     - Class: 114
-      Script: {instanceID: 8186}
+      Script: {instanceID: 8188}
     - Class: 114
-      Script: {instanceID: 8194}
+      Script: {instanceID: 8196}
     - Class: 114
-      Script: {instanceID: 8366}
+      Script: {instanceID: 8368}
     - Class: 114
-      Script: {instanceID: 8416}
+      Script: {instanceID: 8418}
     - Class: 114
-      Script: {instanceID: 8484}
+      Script: {instanceID: 8486}
     - Class: 114
-      Script: {instanceID: 8582}
+      Script: {instanceID: 8584}
     - Class: 114
-      Script: {instanceID: 8600}
+      Script: {instanceID: 8602}
     - Class: 114
-      Script: {instanceID: 8744}
+      Script: {instanceID: 8746}
     - Class: 114
-      Script: {instanceID: 8952}
+      Script: {instanceID: 8954}
     - Class: 114
-      Script: {instanceID: 9116}
+      Script: {instanceID: 9118}
     - Class: 114
-      Script: {instanceID: 9170}
+      Script: {instanceID: 9172}
     - Class: 114
-      Script: {instanceID: 9208}
+      Script: {instanceID: 9210}
     - Class: 114
-      Script: {instanceID: 9652}
+      Script: {instanceID: 9654}
     - Class: 114
-      Script: {instanceID: 10620}
+      Script: {instanceID: 10622}
     - Class: 114
-      Script: {instanceID: 11016}
+      Script: {instanceID: 11018}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -488,6 +495,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
     - Class: 89
@@ -501,9 +510,13 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1588}
+    - Class: 114
       Script: {instanceID: 1592}
     - Class: 114
       Script: {instanceID: 1594}
+    - Class: 114
+      Script: {instanceID: 1660}
     - Class: 114
       Script: {instanceID: 2342}
     - Class: 114
@@ -521,36 +534,42 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5458}
     - Class: 114
-      Script: {instanceID: 5732}
+      Script: {instanceID: 5536}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 5734}
     - Class: 114
-      Script: {instanceID: 6862}
+      Script: {instanceID: 5878}
     - Class: 114
-      Script: {instanceID: 6992}
+      Script: {instanceID: 6864}
     - Class: 114
-      Script: {instanceID: 7454}
+      Script: {instanceID: 6876}
     - Class: 114
-      Script: {instanceID: 8086}
+      Script: {instanceID: 6994}
     - Class: 114
-      Script: {instanceID: 8582}
+      Script: {instanceID: 7456}
     - Class: 114
-      Script: {instanceID: 9712}
+      Script: {instanceID: 8088}
     - Class: 114
-      Script: {instanceID: 9838}
+      Script: {instanceID: 8584}
     - Class: 114
-      Script: {instanceID: 9882}
+      Script: {instanceID: 9714}
     - Class: 114
-      Script: {instanceID: 10204}
+      Script: {instanceID: 9840}
     - Class: 114
-      Script: {instanceID: 11176}
+      Script: {instanceID: 9884}
+    - Class: 114
+      Script: {instanceID: 10206}
+    - Class: 114
+      Script: {instanceID: 11148}
+    - Class: 114
+      Script: {instanceID: 11178}
+    - Class: 114
+      Script: {instanceID: 29726}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 136
-      Script: {instanceID: 0}
-    - Class: 143
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -596,7 +615,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1590}
+      Script: {instanceID: 1588}
     - Class: 114
       Script: {instanceID: 1592}
     - Class: 114
@@ -610,9 +629,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4468}
     - Class: 114
-      Script: {instanceID: 8582}
+      Script: {instanceID: 8584}
     - Class: 114
-      Script: {instanceID: 30254}
+      Script: {instanceID: 37000}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -649,20 +668,30 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1588}
+    - Class: 114
       Script: {instanceID: 1592}
     - Class: 114
       Script: {instanceID: 1594}
+    - Class: 114
+      Script: {instanceID: 1660}
     - Class: 114
       Script: {instanceID: 3210}
     - Class: 114
       Script: {instanceID: 3508}
     - Class: 114
-      Script: {instanceID: 8582}
+      Script: {instanceID: 4468}
+    - Class: 114
+      Script: {instanceID: 8584}
+    - Class: 114
+      Script: {instanceID: 37000}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -679,16 +708,16 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: b5007673bbbdb9d12597a1d8201370f5
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: 915204dac8acad99f076d6e72ada0a0f
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: b5007673bbbdb9d12597a1d8201370f5
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
@@ -955,7 +984,7 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
-      Hash: 29612beaf22065f5318bc23c3754ece5
+      Hash: 06f06e6e4b546eb1d8a3a16fb5d4a6fe
     assemblyName: Assembly-CSharp
     namespaceName: MetalRay
     className: Weapon
@@ -1307,6 +1336,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnJointBreak2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: a6cb031b68e38ef1d1ce27d37f66ba8f
+    assemblyName: Assembly-CSharp
+    namespaceName: MetalRay
+    className: DropRate
   - hash:
       serializedVersion: 2
       Hash: 9ebc0a3016506a0cbb7e0306dfcb9497
@@ -1927,7 +1962,7 @@ ScriptsOnlyBuild:
     className: UnityOnSubmitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 3576507f3cb3d54fa195cd5fe5306909
+      Hash: 734de4baaef404740c5c182fd79c8340
     assemblyName: Assembly-CSharp
     namespaceName: MetalRay
     className: enemyWeapon
@@ -1951,7 +1986,7 @@ ScriptsOnlyBuild:
     className: inGame
   - hash:
       serializedVersion: 2
-      Hash: 9ff7e840d3e6ec3627fd90a6e6b7f568
+      Hash: 9a79c301a5ec42684b6881036eb9da24
     assemblyName: Assembly-CSharp
     namespaceName: MetalRay
     className: Shoot
@@ -2065,7 +2100,7 @@ ScriptsOnlyBuild:
     className: menuManager
   - hash:
       serializedVersion: 2
-      Hash: f8b8843c84ef163ae06d284aad0d6086
+      Hash: 1ae1fee3ef8229167a9cb5948281463b
     assemblyName: Assembly-CSharp
     namespaceName: MetalRay
     className: EnemyLife
@@ -2111,6 +2146,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 8c0f9e0cb36efffc9e8bf35b26780dd0
+    assemblyName: Assembly-CSharp
+    namespaceName: MetalRay
+    className: DiscoShoot
+  - hash:
+      serializedVersion: 2
+      Hash: 5db4ab97c263b643d695be1c72dd849c
+    assemblyName: Assembly-CSharp
+    namespaceName: MetalRay
+    className: distorcionPowerUp
   platform: 19
   scenePathNames:
   - Assets/build/Scenes/MainMenuIntro.unity
@@ -2118,4 +2165,4 @@ ScriptsOnlyBuild:
   - Assets/build/Scenes/level1.unity
   - Assets/build/Scenes/lose.unity
   - Assets/build/Scenes/win.unity
-  playerPath: C:/Users/bielc/OneDrive/Documentos/trabalhosFacul/TI/metalRay1/build1.exe
+  playerPath: C:/Users/bielc/OneDrive/Documentos/trabalhosFacul/PDJ/build1.exe

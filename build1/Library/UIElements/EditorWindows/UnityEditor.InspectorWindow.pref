@@ -43,7 +43,11 @@ MonoBehaviour:
   - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-soundList__unity-vertical-collection-scroll-view__unity-list-soundList.Array.data[0].Sounds__unity-vertical-collection-scroll-view__Slider__UnityEngine.UIElements.Scroller+ScrollerSlider
   - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-powerUp__UnityEngine.UIElements.ListView
   - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-powerUp__unity-vertical-collection-scroll-view__Slider__UnityEngine.UIElements.Scroller+ScrollerSlider
+  - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-shootPrefab__UnityEngine.UIElements.ListView
+  - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-shootPrefab__unity-vertical-collection-scroll-view__Slider__UnityEngine.UIElements.Scroller+ScrollerSlider
   m_Values:
+  - '{}'
+  - '{}'
   - '{}'
   - '{}'
   - '{}'

@@ -229,8 +229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp:
-  - {fileID: 2769908974610488963, guid: 759462908193f854e84121be67f6e5e2, type: 3}
-  - {fileID: 3302813592259224092, guid: 5e08e280167413b4f9cd36afb141ebd3, type: 3}
+  - {fileID: 5306928425731695786, guid: 7034a5886b2ed3e4b99656c77ddf3039, type: 3}
+  - {fileID: 1037112439936919201, guid: 5be5eb014f8cf7549bce2c1b3a9b1b96, type: 3}
 --- !u!1001 &2134339781499443070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -438,8 +438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp:
-  - {fileID: 2769908974610488963, guid: 759462908193f854e84121be67f6e5e2, type: 3}
-  - {fileID: 3302813592259224092, guid: 5e08e280167413b4f9cd36afb141ebd3, type: 3}
+  - {fileID: 5306928425731695786, guid: 7034a5886b2ed3e4b99656c77ddf3039, type: 3}
+  - {fileID: 1037112439936919201, guid: 5be5eb014f8cf7549bce2c1b3a9b1b96, type: 3}
 --- !u!1001 &2263168903018567560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -647,8 +647,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp:
-  - {fileID: 2769908974610488963, guid: 759462908193f854e84121be67f6e5e2, type: 3}
-  - {fileID: 3302813592259224092, guid: 5e08e280167413b4f9cd36afb141ebd3, type: 3}
+  - {fileID: 5306928425731695786, guid: 7034a5886b2ed3e4b99656c77ddf3039, type: 3}
+  - {fileID: 1037112439936919201, guid: 5be5eb014f8cf7549bce2c1b3a9b1b96, type: 3}
 --- !u!1001 &4389388502313485596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -856,8 +856,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp:
-  - {fileID: 2769908974610488963, guid: 759462908193f854e84121be67f6e5e2, type: 3}
-  - {fileID: 3302813592259224092, guid: 5e08e280167413b4f9cd36afb141ebd3, type: 3}
+  - {fileID: 5306928425731695786, guid: 7034a5886b2ed3e4b99656c77ddf3039, type: 3}
+  - {fileID: 1037112439936919201, guid: 5be5eb014f8cf7549bce2c1b3a9b1b96, type: 3}
 --- !u!1001 &7329418933151383009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1055,8 +1055,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp:
-  - {fileID: 2769908974610488963, guid: 759462908193f854e84121be67f6e5e2, type: 3}
-  - {fileID: 3302813592259224092, guid: 5e08e280167413b4f9cd36afb141ebd3, type: 3}
+  - {fileID: 5306928425731695786, guid: 7034a5886b2ed3e4b99656c77ddf3039, type: 3}
+  - {fileID: 1037112439936919201, guid: 5be5eb014f8cf7549bce2c1b3a9b1b96, type: 3}
 --- !u!4 &784011751259739940 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8022614249460411077, guid: cb1f480e84b12ad4981ba1f8c585ceaf, type: 3}
@@ -1269,8 +1269,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp:
-  - {fileID: 2769908974610488963, guid: 759462908193f854e84121be67f6e5e2, type: 3}
-  - {fileID: 3302813592259224092, guid: 5e08e280167413b4f9cd36afb141ebd3, type: 3}
+  - {fileID: 5306928425731695786, guid: 7034a5886b2ed3e4b99656c77ddf3039, type: 3}
+  - {fileID: 1037112439936919201, guid: 5be5eb014f8cf7549bce2c1b3a9b1b96, type: 3}
 --- !u!1 &6628916113128550818 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3605733846079501619, guid: cb1f480e84b12ad4981ba1f8c585ceaf, type: 3}
@@ -1473,8 +1473,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp:
-  - {fileID: 2769908974610488963, guid: 759462908193f854e84121be67f6e5e2, type: 3}
-  - {fileID: 3302813592259224092, guid: 5e08e280167413b4f9cd36afb141ebd3, type: 3}
+  - {fileID: 5306928425731695786, guid: 7034a5886b2ed3e4b99656c77ddf3039, type: 3}
+  - {fileID: 1037112439936919201, guid: 5be5eb014f8cf7549bce2c1b3a9b1b96, type: 3}
 --- !u!4 &2289247838343680810 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8022614249460411077, guid: cb1f480e84b12ad4981ba1f8c585ceaf, type: 3}
@@ -1687,8 +1687,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp:
-  - {fileID: 2769908974610488963, guid: 759462908193f854e84121be67f6e5e2, type: 3}
-  - {fileID: 3302813592259224092, guid: 5e08e280167413b4f9cd36afb141ebd3, type: 3}
+  - {fileID: 5306928425731695786, guid: 7034a5886b2ed3e4b99656c77ddf3039, type: 3}
+  - {fileID: 1037112439936919201, guid: 5be5eb014f8cf7549bce2c1b3a9b1b96, type: 3}
 --- !u!1 &5476045935221165348 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3605733846079501619, guid: cb1f480e84b12ad4981ba1f8c585ceaf, type: 3}

@@ -107,6 +107,10 @@ PrefabInstance:
       propertyPath: firePoint
       value: 
       objectReference: {fileID: 5924458587125942950}
+    - target: {fileID: -3826678532154180526, guid: b758f9fb6702726449bd494eb3ebf741, type: 3}
+      propertyPath: shootPrefab
+      value: 
+      objectReference: {fileID: 4096486653031533978, guid: 5e83c8c629a1e894fbcb41b3e6e0e5c6, type: 3}
     - target: {fileID: 479169308711392969, guid: b758f9fb6702726449bd494eb3ebf741, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -234,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b258a25f730a64d9d5471811ab1d8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 100
+  life: 80
   deathEffect: {fileID: 3308732416233299549, guid: 8b4dfd9937c53e94eba7816ba355b53b, type: 3}
   scoreText: {fileID: 7306564048401854638, guid: 4ff1cbe3c0d46674283f740aa8d42ed7, type: 3}
   vfxhit: {fileID: 5165246255472843786, guid: 80d56ecff5b950147b3c9615098b99f3, type: 3}
@@ -279,8 +283,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp:
-  - {fileID: 2769908974610488963, guid: 759462908193f854e84121be67f6e5e2, type: 3}
-  - {fileID: 3302813592259224092, guid: 5e08e280167413b4f9cd36afb141ebd3, type: 3}
+  - {fileID: 5306928425731695786, guid: 7034a5886b2ed3e4b99656c77ddf3039, type: 3}
+  - {fileID: 1037112439936919201, guid: 5be5eb014f8cf7549bce2c1b3a9b1b96, type: 3}
 --- !u!4 &2212153071269271665 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 479169308711392969, guid: b758f9fb6702726449bd494eb3ebf741, type: 3}
@@ -298,6 +302,10 @@ PrefabInstance:
       propertyPath: firePoint
       value: 
       objectReference: {fileID: 6574715981318131833}
+    - target: {fileID: -3826678532154180526, guid: b758f9fb6702726449bd494eb3ebf741, type: 3}
+      propertyPath: shootPrefab
+      value: 
+      objectReference: {fileID: 4096486653031533978, guid: 5e83c8c629a1e894fbcb41b3e6e0e5c6, type: 3}
     - target: {fileID: 479169308711392969, guid: b758f9fb6702726449bd494eb3ebf741, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5
@@ -430,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b258a25f730a64d9d5471811ab1d8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 100
+  life: 80
   deathEffect: {fileID: 3308732416233299549, guid: 8b4dfd9937c53e94eba7816ba355b53b, type: 3}
   scoreText: {fileID: 7306564048401854638, guid: 4ff1cbe3c0d46674283f740aa8d42ed7, type: 3}
   vfxhit: {fileID: 5165246255472843786, guid: 80d56ecff5b950147b3c9615098b99f3, type: 3}
@@ -475,5 +483,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp:
-  - {fileID: 2769908974610488963, guid: 759462908193f854e84121be67f6e5e2, type: 3}
-  - {fileID: 3302813592259224092, guid: 5e08e280167413b4f9cd36afb141ebd3, type: 3}
+  - {fileID: 5306928425731695786, guid: 7034a5886b2ed3e4b99656c77ddf3039, type: 3}
+  - {fileID: 1037112439936919201, guid: 5be5eb014f8cf7549bce2c1b3a9b1b96, type: 3}

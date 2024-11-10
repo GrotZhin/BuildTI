@@ -13,6 +13,7 @@ namespace MetalRay
         public GameObject impactEfect;
 
         public float timeDestroy;
+        
 
       
         void Start(){
