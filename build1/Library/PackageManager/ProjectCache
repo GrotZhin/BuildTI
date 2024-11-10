@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638637858362060866
-    m_Hash: 2339585328
+      ticks: 638668557994875816
+    m_Hash: 1386310013
   m_LockFileStatus:
     m_FilePath: C:/Users/bielc/OneDrive/Documentos/GitHub/BuildTI/build1/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638637858362143575
-    m_Hash: 3757607119
+      ticks: 638668557994885911
+    m_Hash: 1750136799
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
