@@ -7,8 +7,6 @@ using UnityEngine;
 public class enemy_mov01 : MonoBehaviour
 {
     public float spd = 1;
-
-    public Transform cameraFollow;
   
     private void FixedUpdate()
     {

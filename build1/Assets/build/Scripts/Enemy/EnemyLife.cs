@@ -19,10 +19,13 @@ namespace MetalRay
         public int damage = 10;
 
         DropRate dropRate;
+        Score score;
+       
 
         void Start()
         {
             dropRate = GetComponent<DropRate>();
+            score = GetComponent<Score>();
         }
 
 
@@ -35,6 +38,7 @@ namespace MetalRay
             if (life <= 0)
             {
                 Die();
+                Score.scoreValue += 10;
                 dropRate.DropPowerUp();
             }
 
@@ -57,8 +61,6 @@ namespace MetalRay
         {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Instantiate(vfxhit, transform.position, Quaternion.identity);
-            controlePontuacao.Pontuacao++;
-
             Destroy(gameObject);
 
         }

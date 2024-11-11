@@ -27,7 +27,7 @@ namespace MetalRay
 
     void Start()
     {
-      controlePontuacao.Pontuacao = 0;
+      
   
     }
 

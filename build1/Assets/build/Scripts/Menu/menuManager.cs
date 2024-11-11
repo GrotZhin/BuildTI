@@ -11,28 +11,34 @@ namespace MetalRay
     {
         [SerializeField] private GameObject mainMenu;
         [SerializeField] private GameObject optionMenu;
+        [SerializeField] private GameObject gameMenu;
 
         Scene scene;
+
         void Start()
         {
-            //soundManager.PlaySound(SoundType.menuSong);
-            //soundManager.PlaySound(SoundType.sfx);
+
             scene = SceneManager.GetActiveScene();
         }
 
         void Update()
         {
-            if (optionMenu.activeSelf == false && scene.name == ("level1") && Input.GetKeyDown(KeyCode.Escape))
+            if (gameMenu.activeSelf == false && scene.name == ("level1") && Input.GetKeyDown(KeyCode.Escape))
             {
                 Time.timeScale = 0;
-                optionMenu.SetActive(true);
+                gameMenu.SetActive(true);
             }
-            else if (optionMenu.activeSelf == true && scene.name == ("level1") && Input.GetKeyDown(KeyCode.Escape))
+            else if (optionMenu.activeSelf == true && Input.GetKeyDown(KeyCode.Escape))
+            {
+                optionMenu.SetActive(false);
+                gameMenu.SetActive(true);
+            }
+            else if (gameMenu.activeSelf == true && scene.name == ("level1") && Input.GetKeyDown(KeyCode.Escape))
             {
                 Time.timeScale = 1;
-                optionMenu.SetActive(false);
+                gameMenu.SetActive(false);
             }
-            
+
 
         }
 
@@ -40,6 +46,19 @@ namespace MetalRay
         public void Play()
         {
             SceneManager.LoadScene("level1");
+            
+        }
+        
+
+        public void Audio()
+        {
+            optionMenu.SetActive(true);
+        }
+
+        public void Resume()
+        {
+            Time.timeScale = 1;
+            gameMenu.SetActive(false);
         }
 
         public void Options()
@@ -55,8 +74,22 @@ namespace MetalRay
         }
         public void Back()
         {
-            mainMenu.SetActive(true);
-            optionMenu.SetActive(false);
+            if (scene.name == ("MainMenu"))
+            {
+                mainMenu.SetActive(true);
+                optionMenu.SetActive(false);
+            }
+            else if(scene.name == ("level1"))
+            {
+                optionMenu.SetActive(false);
+                gameMenu.SetActive(true);
+            }
+           
+        }
+        public void MainMenu()
+        {
+            SceneManager.LoadScene("MainMenu");
+            Time.timeScale = 1;
         }
 
     }

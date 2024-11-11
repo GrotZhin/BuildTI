@@ -23,6 +23,11 @@ namespace MetalRay
         public GameObject deathEffect;
 
         public TextMeshProUGUI textoVida;
+        
+        void Start(){
+            life = maxLife;
+        }
+
         public void TakeDamage(int damage)
         {
             life -= damage;

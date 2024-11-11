@@ -331,6 +331,7 @@
 "Assets/build/Scripts/Menu/menuManager.cs"
 "Assets/build/Scripts/Player/Controle.cs"
 "Assets/build/Scripts/Player/Life.cs"
+"Assets/build/Scripts/Player/lifeBar.cs"
 "Assets/build/Scripts/Player/PlayerLife.cs"
 "Assets/build/Scripts/Player/Shoot.cs"
 "Assets/build/Scripts/Player/Weapon.cs"
